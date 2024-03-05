@@ -31,6 +31,17 @@ namespace DataAccess.DataContexts
             modelBuilder.Entity<UserEntity>()
                 .HasIndex(u => u.UserName)
                 .IsUnique();
+
+            //UserEntity user1 = new UserEntity() 
+            //{
+            //    Id = Guid.Parse("A6768765-57D8-4D34-B5FE-49517787E2E2"),
+            //    FirstName = "Johnny",
+            //    LastName = "Rocket",
+            //    UserName = "jrocket@example.com",
+            //    Password = "Password",
+            //    Roles = "Administrator"
+            //};
+            //modelBuilder.Entity<UserEntity>().HasData(user1);
         }
     }
 }
